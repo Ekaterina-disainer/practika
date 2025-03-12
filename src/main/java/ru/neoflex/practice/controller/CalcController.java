@@ -24,8 +24,8 @@ public class CalcController {
     @Operation(summary = "Сложение")
     @GetMapping("/plus/{a}/{b}")
     public String plus(
-            @Parameter(description = "Первое число") @PathVariable("a") Integer a,
-            @Parameter(description = "Второе число") @PathVariable("b") Integer b) {
+            @Parameter(description = "First number") @PathVariable("a") Integer a,
+            @Parameter(description = "Second number") @PathVariable("b") Integer b) {
         return calcService.calculate("plus", a, b);
     }
 
@@ -33,8 +33,8 @@ public class CalcController {
     @GetMapping("/minus/{a}/{b}")
 
     public String minus(
-            @Parameter(description = "Первое число") @PathVariable("a") Integer a,
-            @Parameter(description = "Второе число") @PathVariable("b") Integer b) {
+            @Parameter(description = "First number") @PathVariable("a") Integer a,
+            @Parameter(description = "Second number") @PathVariable("b") Integer b) {
         return calcService.calculate("minus", a, b);
     }
 

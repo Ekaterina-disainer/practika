@@ -17,10 +17,10 @@ public class CalcService {
     public String calculate(String operation, Integer a, Integer b) {
         Integer result = null;
         switch (operation) {
-            case "Сложить":
+            case "plus":
                 result = a + b;
                 break;
-            case "Вычесть":
+            case "minus":
                 result = a - b;
                 break;
         }
